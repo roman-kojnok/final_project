@@ -1,0 +1,23 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Fitness Calculator{% endblock %}
+{% block meta_description %}Fitness Calculator Website is a Flask CRUD Project to demonstrate understanding of DevOps process. {% endblock %}
+
+{% block body %}
+  <div class="container sm-margin-top">
+    <div class="row text-center lg-margin-bottom">
+      <h1>Registration Form</h1>
+      <h3 class="text-muted">
+        Please, fill out the following fields to finish the registration process:
+      </h3><br>
+<form action='' method = "POST">
+  <p>student ID <input type = "integer" name = "student_id" /></p>
+  <p>name <input type = "text" name = "name" /></p>
+  <p>gender <input type = "integer" name = "gender" /></p>
+  <p>email <input type = "text" name = "email" /></p>
+  <p><input type = "submit" value = "Submit" /></p>
+</form>
+        <hr>
+    </div>
+  </div>
+{% endblock %}

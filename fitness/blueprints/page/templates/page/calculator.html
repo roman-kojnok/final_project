@@ -1,0 +1,26 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Fitness Calculator{% endblock %}
+{% block meta_description %}Fitness Calculator Website is a Flask CRUD Project to demonstrate understanding of DevOps process. {% endblock %}
+
+{% block body %}
+  <div class="container sm-margin-top">
+    <div class="row text-center lg-margin-bottom">
+      <h1>Welcome to Fitness Calculator!</h1>
+      <h3 class="text-muted">
+        Please, fill out the following fields and press Submit to get your results:
+      </h3><br>
+<form action='' method = "POST">
+  <p>Weight in kg: <input type = "integer" name = "weight" /></p>
+  <p>Height in cm: <input type = "text" name = "height" /></p>
+  <p>Age <input type = "integer" name = "age" /></p>
+<p><select class="gender">
+<option value="Select">Select gender...</option>
+<option value="1">Male</option>
+<option value="2">Female</option></select></p>
+  <p><input type = "submit" value = "Submit" /></p>
+</form>
+        <hr>
+    </div>
+  </div>
+{% endblock %}
