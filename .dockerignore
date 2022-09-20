@@ -1,0 +1,4 @@
+.git
+.dockerignore
+/fitness/blueprints/page/templates/back/
+file
